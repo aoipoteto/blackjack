@@ -1,22 +1,21 @@
 class Card
-    attr_reader :mark,:number
-    def initialize(mark,number)
-        @mark = mark
-        @number = number
+    attr_reader :value, :suit  
+  
+    def initialize(value, suit)  
+       @value = value  
+       @suit = suit  
     end
-
-    def info
-        return "#{@mark}の#{@number}"
+  
+    def to_s  
+       "#{suit}の#{value}"
     end
-
-    def score
-        if @number == "J" || @number == "Q" || @number == "K"
-            @number = 10
-        elsif @number == "A"
-            @number = 1
-        else
-            @number.to_i
-        end
+  
+    def point 
+       case value
+       when 'A' then 11
+       when 'K', 'Q', 'J' then 10
+       else value.to_i
+      end
     end
-end
-
+  end
+  
