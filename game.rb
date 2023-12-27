@@ -70,7 +70,6 @@ class Game
             end
             puts "ブラックジャックを終了します。"
         end
-
     end
 end
 
