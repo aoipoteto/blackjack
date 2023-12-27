@@ -5,7 +5,6 @@ require "./dealer.rb"
 require "./player.rb"
 
 class Game
-
     attr_reader :player, :dealer, :deck
 
         def initialize
