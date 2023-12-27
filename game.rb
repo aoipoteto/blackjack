@@ -2,6 +2,7 @@ require "./card.rb"
 require "./deck.rb"
 require "./hand.rb"
 require "./dealer.rb"
+require "./player.rb"
 
 class Game
 
